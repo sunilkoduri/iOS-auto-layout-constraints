@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="auto_layout_advanced" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XR-50-QVg">
+                                <rect key="frame" x="17" y="20" width="566" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.33707224987200923" green="0.38360557396208916" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="AdP-1J-xAh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3X-WS-aBU">
+                                <rect key="frame" x="17" y="452" width="125" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.90925420059999995" blue="0.09387448843" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Lwk-1N-8Ze"/>
+                                    <constraint firstAttribute="width" constant="125" id="uBt-oI-Vkh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ti2-JJ-xps">
+                                <rect key="frame" x="455" y="452" width="125" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5420812747" blue="0.60227517720000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="Zd8-D0-XjM"/>
+                                    <constraint firstAttribute="height" constant="128" id="rT2-Dj-4P3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K3X-WS-aBU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-3" id="D3P-jz-Kiw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7XR-50-QVg" secondAttribute="trailing" constant="-3" id="Ntw-XT-oK9"/>
+                            <constraint firstItem="Ti2-JJ-xps" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VMu-7S-ztJ"/>
+                            <constraint firstItem="7XR-50-QVg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-3" id="b1o-ko-AbD"/>
+                            <constraint firstItem="7XR-50-QVg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="cWx-sQ-fnZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K3X-WS-aBU" secondAttribute="bottom" constant="20" id="f89-oa-ZU7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ti2-JJ-xps" secondAttribute="bottom" constant="20" id="mk6-Pq-Cfw"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="418"/>
         </scene>
     </scenes>
 </document>
